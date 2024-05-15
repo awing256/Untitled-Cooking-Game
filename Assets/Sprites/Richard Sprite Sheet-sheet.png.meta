@@ -1,0 +1,445 @@
+fileFormatVersion: 2
+guid: 0d4bba34c7b8f1f458ff597a7e46248f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Richard Idle 1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 442
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3da9db6c020e642957a497093e5b74
+      internalID: -1524740611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Idle 2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 442
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0db55f700936f448a1955e765f7ee15
+      internalID: 850599125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Idle 3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 442
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8bcb78e5fb87b439d7e0cf1e8bb7e9
+      internalID: 2030450907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Idle 4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 442
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bc59cf9267c2e45aef88e854b81f64
+      internalID: -731292090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Shadow
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 486
+        width: 39
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15b985e18bb6584cbf15a895058b801
+      internalID: -25159542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Bullet
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 458
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311d867b420def64aa009691067f0ef4
+      internalID: -391851623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Notice 1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 367
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f384434ab27171d4185258ca63901628
+      internalID: -480733869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Notice 2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 367
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2f1f44ad886274280f56e80267b144
+      internalID: -774170469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Notice 3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 367
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c822b309743534449a2ce56de640f8ad
+      internalID: 1296226640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Notice 4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 367
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11f0b50a37ca434586ede9d5762b209
+      internalID: -477331953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Alert 2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 286
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ecdbd0eae01664185ad7c03523aa7b
+      internalID: 712486676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Alert 3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 286
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fe7957522fdcb4b92b49568e3ccaf4
+      internalID: -718723412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Richard Alert 1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 286
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b44cb940018aa4ea77e2218ae96830
+      internalID: -1532503430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Richard Alert 1: -1532503430
+      Richard Alert 2: 712486676
+      Richard Alert 3: -718723412
+      Richard Bullet: -391851623
+      Richard Idle 1: -1524740611
+      Richard Idle 2: 850599125
+      Richard Idle 3: 2030450907
+      Richard Idle 4: -731292090
+      Richard Notice 1: -480733869
+      Richard Notice 2: -774170469
+      Richard Notice 3: 1296226640
+      Richard Notice 4: -477331953
+      Richard Shadow: -25159542
+      Richard Sprite Sheet-sheet_0: -276348262
+      Richard Sprite Sheet-sheet_1: 61271966
+      Richard Sprite Sheet-sheet_12: -2085100920
+      Richard Sprite Sheet-sheet_13: 967653022
+      Richard Sprite Sheet-sheet_14: 1353026788
+      Richard Sprite Sheet-sheet_16: -1098390411
+      Richard Sprite Sheet-sheet_17: -456444207
+      Richard Sprite Sheet-sheet_18: -523924303
+      Richard Sprite Sheet-sheet_19: 1720791577
+      Richard Sprite Sheet-sheet_2: -997934357
+      Richard Sprite Sheet-sheet_20: -1472019355
+      Richard Sprite Sheet-sheet_21: 447749182
+      Richard Sprite Sheet-sheet_22: -2064208323
+      Richard Sprite Sheet-sheet_27: -274791732
+      Richard Sprite Sheet-sheet_28: -1432484713
+      Richard Sprite Sheet-sheet_29: 2026232256
+      Richard Sprite Sheet-sheet_3: -1707217855
+      Richard Sprite Sheet-sheet_30: -2146162244
+      Richard Sprite Sheet-sheet_31: 1122966092
+      Richard Sprite Sheet-sheet_32: 795069758
+      Richard Sprite Sheet-sheet_33: -2043853914
+      Richard Sprite Sheet-sheet_4: 214632320
+      Richard Sprite Sheet-sheet_5: 158010314
+      Richard Sprite Sheet-sheet_6: -1046510418
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

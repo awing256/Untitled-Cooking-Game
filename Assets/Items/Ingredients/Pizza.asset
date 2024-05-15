@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12e5e5b0d1a5d840bc8ce31c371c457, type: 3}
+  m_Name: Pizza
+  m_EditorClassIdentifier: 
+  itemName: Pizza
+  icon: {fileID: 1309965121, guid: 03b3fb010103eee41a1338e8817b9513, type: 3}
+  description: eatsa da
+  quantity: 1
+  type: 3

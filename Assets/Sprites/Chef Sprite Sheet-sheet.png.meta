@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 779382752e041654abe39dc4b288cf0f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chef Walking Right 1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 436
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0.7315219, y: 0.4947505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494cb3d186760fb4c8a32e7e8b50b8b4
+      internalID: 219039496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Right 2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 437
+        width: 41
+        height: 64
+      alignment: 9
+      pivot: {x: 0.7366313, y: 0.48621893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e103e4ca383e254d968f4cf09df196d
+      internalID: -610040594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Right 3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 436
+        width: 43
+        height: 63
+      alignment: 9
+      pivot: {x: 0.75126433, y: 0.4947505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dd4475bd1faa94199fe350fb55a407
+      internalID: 1699402680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Right 4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 436
+        width: 41
+        height: 62
+      alignment: 9
+      pivot: {x: 0.7420092, y: 0.48755276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b109ce86a5c3099409cbf9312c989879
+      internalID: 161288927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Hand
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 489
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a92dd11974ddf4eacc841288ed7eda
+      internalID: -527271073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Shadow
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 463
+        width: 39
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2f7a3941ddbe944a374c8040248383
+      internalID: 1002693322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Left 1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 363
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0.30982107, y: 0.49475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaa716d145eb4842bb10e775d757ce5
+      internalID: 820638253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Left 2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 363
+        width: 41
+        height: 64
+      alignment: 9
+      pivot: {x: 0.2795027, y: 0.5034456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ddb645bb420a347ae35f4ed879dea3
+      internalID: 1898073534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Left 3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 363
+        width: 43
+        height: 63
+      alignment: 9
+      pivot: {x: 0.25899133, y: 0.4912502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77e9a2e8e7d49c45807542fc0abf943
+      internalID: 963184148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Walking Left 4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 363
+        width: 41
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2741249, y: 0.48250034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e134d70627ef01740a99f1ef8db0a49c
+      internalID: 779473964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Idle Right 1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 288
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0.7315221, y: 0.4912502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d9ab69d89da2c47a192d81f57f5a5d
+      internalID: 2009451254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Idle Right 2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 288
+        width: 40
+        height: 64
+      alignment: 9
+      pivot: {x: 0.7370346, y: 0.5068908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235482077b5c0cb4ca4b2993bf15ace5
+      internalID: -1550055734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Idle Left 1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 288
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2850151, y: 0.49475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d881958678dcc48b234dd8ef228a00
+      internalID: 1146405517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef Idle Left 2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 288
+        width: 40
+        height: 64
+      alignment: 9
+      pivot: {x: 0.27674675, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61596cdc067ff284f9dfa467860726a3
+      internalID: -1010944947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Chef Hand: -1820790653
+      Chef Idle Left 1: -2078901584
+      Chef Idle Left 2: 1562344178
+      Chef Idle Right 1: 557346398
+      Chef Idle Right 2: -746911278
+      Chef Shadow: -202015264
+      Chef Sprite Sheet-sheet_0: -1401275412
+      Chef Sprite Sheet-sheet_1: -2096625135
+      Chef Sprite Sheet-sheet_10: 228003834
+      Chef Sprite Sheet-sheet_11: -197743550
+      Chef Sprite Sheet-sheet_12: -499574185
+      Chef Sprite Sheet-sheet_14: -1091604993
+      Chef Sprite Sheet-sheet_19: -1414670624
+      Chef Sprite Sheet-sheet_2: -1814616883
+      Chef Sprite Sheet-sheet_20: -1892400375
+      Chef Sprite Sheet-sheet_22: -789200196
+      Chef Sprite Sheet-sheet_23: 1963217068
+      Chef Sprite Sheet-sheet_27: -868657635
+      Chef Sprite Sheet-sheet_8: 1243523078
+      Chef Sprite Sheet-sheet_9: 742007677
+      Chef Walking Left 1: 1025913913
+      Chef Walking Left 2: 33469801
+      Chef Walking Left 3: 1239466768
+      Chef Walking Left 4: 445810284
+      Chef Walking Right 1: 437312399
+      Chef Walking Right 2: -416784051
+      Chef Walking Right 3: -307268143
+      Chef Walking Right 4: -292349507
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
