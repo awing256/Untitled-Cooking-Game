@@ -25,7 +25,8 @@ public class PlayerScript : MonoBehaviour
     
     void Awake()
     {
-        this.pc = new PlayerController(playerSO.speed, playerSO.dodgeSpeed, playerSO.aimDistance, this, this.attackPoint, this.reticle );
+        this.pc = new PlayerController(playerSO.speed, playerSO.dodgeSpeed, playerSO.aimDistance, this, this.attackPoint, 
+            this.reticle, new ButcherClass() );
         curHealth = playerSO.maxHealth;        
     }
 

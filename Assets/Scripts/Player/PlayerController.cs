@@ -10,15 +10,17 @@ public class PlayerController
     private PlayerAim playerAim;
     private PlayerAnimation playerAnimation;
     private GameObject player;
+    private CharacterClass cc;
     
     private InputAction primary, secondary, special, utility, ultimate, interact, move, aim;
 
     
 
     public PlayerController(float playerSpeed, float dodgeSpeed, float aimDistance, PlayerScript ps, GameObject attackPoint, 
-        GameObject reticle) {
+        GameObject reticle, CharacterClass cc) {
         this.ps = ps;
         this.player = ps.gameObject;
+        this.cc = cc;
         playerMovement = new PlayerMovement(playerSpeed, dodgeSpeed, player.GetComponent<Rigidbody2D>(), ps);
         playerAim = new PlayerAim(aimDistance, player.GetComponent<Transform>(), attackPoint.GetComponent<Transform>(), 
             reticle.GetComponent<Transform>(), ps);
@@ -30,7 +32,6 @@ public class PlayerController
 
     public void SetInputs(InputAction primary, InputAction secondary, InputAction special, InputAction utility, 
     InputAction ultimate, InputAction interact, InputAction move, InputAction aim){
-        Debug.Log("entering pc for input set");
         this.move = move;
         this.move.Enable();
         this.primary = primary;
@@ -56,6 +57,22 @@ public class PlayerController
     private void SubscribeToInputEvents(){
         this.utility.performed += _ => {
             ps.UpdateState(PlayerScript.PlayerState.Dodging);
+        };
+
+        this.primary.performed += _ =>{
+            cc.PrimaryAttack();
+        };
+        this.secondary.performed += _ =>{
+            cc.SecondaryAttack();
+        };
+        this.special.performed += _ =>{
+            cc.UseSpecial();
+        };
+        this.ultimate.performed += _ =>{
+            cc.UseUltimate();
+        };
+        this.interact.performed += _ =>{
+            cc.Interact();
         };
     }
     private void OnStateChanged(PlayerScript.PlayerState newState){
