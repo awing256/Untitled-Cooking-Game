@@ -16,11 +16,11 @@ public class GunWeaponClass : WeaponClass
     }
 
     public override void WeaponAttack(){
-        if(canAttack){
-            GameObject bullet = Object.Instantiate(bulletPrefab, attackPoint.transform.position, Quaternion.identity);
-            bullet.transform.right = Quaternion.Euler(0, 0, playerController.aimAngle) * player.transform.right;
-            bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
-        }
+        // if(canAttack){
+        //     GameObject bullet = Object.Instantiate(bulletPrefab, attackPoint.transform.position, Quaternion.identity);
+        //     bullet.transform.right = Quaternion.Euler(0, 0, playerController.aimAngle) * player.transform.right;
+        //     bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
+        // }
     }
 
 }

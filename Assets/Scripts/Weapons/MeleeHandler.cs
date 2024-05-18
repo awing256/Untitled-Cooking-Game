@@ -22,11 +22,11 @@ public class MeleeHandler : MonoBehaviour
         weapon = new MeleeWeaponClass(weaponName, icon, description, attackPoint, attackInterval, weaponPrefab, swingAmount);
     }
 
-    void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.CompareTag("Player")) {
-            GameObject.FindObjectOfType<PlayerController>().weaponInventory.AddWeapon(weapon);
-            Destroy(this.gameObject);
-        }
-    }
+    // void OnTriggerEnter2D(Collider2D other){
+    //     if (other.gameObject.CompareTag("Player")) {
+    //         GameObject.FindObjectOfType<PlayerController>().weaponInventory.AddWeapon(weapon);
+    //         Destroy(this.gameObject);
+    //     }
+    // }
 
 }

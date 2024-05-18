@@ -8,7 +8,7 @@ public class EnemyBulletScript : BulletScript
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Player")) {
             PlayerScript playerScript = GameObject.FindObjectOfType<PlayerScript>();
-            if (playerScript.currentState != PlayerController.PlayerState.Dodging){
+            if (playerScript.currentState != PlayerScript.PlayerState.Dodging){
                 playerScript.TakeDamage(1);
                 Destroy(this.gameObject);
             }

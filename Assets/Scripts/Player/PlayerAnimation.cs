@@ -7,19 +7,18 @@ public class PlayerAnimation
 {
     private Animator animator;
     private SpriteRenderer playerSR, attackPointSR;
-    private PlayerController pc;
-
+    private PlayerScript ps;
     private bool isFlipped;
     
 
 
-    public PlayerAnimation(Animator animator, SpriteRenderer playerSR, SpriteRenderer attackPointSR, PlayerController pc){
+    public PlayerAnimation(Animator animator, SpriteRenderer playerSR, SpriteRenderer attackPointSR, PlayerScript ps){
         this.animator = animator;
         this.playerSR = playerSR; 
         this.attackPointSR = attackPointSR;
-        this.pc = pc;
+        this.ps = ps;
 
-        pc.onStateChanged += OnStateChanged;
+        ps.onStateChanged += OnStateChanged;
 
     }
 
@@ -29,7 +28,7 @@ public class PlayerAnimation
         attackPointSR.flipY = isFlipped;
     }
 
-    private void OnStateChanged(PlayerController.PlayerState newState){
+    private void OnStateChanged(PlayerScript.PlayerState newState){
         animator.Play(newState.ToString());
     }
 

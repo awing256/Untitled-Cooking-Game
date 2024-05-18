@@ -4,31 +4,68 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    [SerializeField] private PlayerController playerController;
-    public PlayerController.PlayerState currentState;
+    private PlayerController pc;
+    public PlayerState currentState;
+    private int curHealth;
+    public float aimAngle;
+    [SerializeField] PlayerScriptableObject playerSO;
+    [SerializeField] private GameObject attackPoint;
+    [SerializeField] private GameObject reticle;   
 
-    void Start()
+    public enum PlayerState
     {
-        // Subscribe to event
-        playerController.onStateChanged += OnPlayerStateChanged;
+        Idle,
+        Walking,
+        Dodging,
+        Dead
+    }
+    public delegate void OnStateChanged(PlayerState newState);
+    public event OnStateChanged onStateChanged;
+
+    
+    void Awake()
+    {
+        this.pc = new PlayerController(playerSO.speed, playerSO.dodgeSpeed, playerSO.aimDistance, this, this.attackPoint, this.reticle );
+        curHealth = playerSO.maxHealth;        
     }
 
-    private void OnPlayerStateChanged(PlayerController.PlayerState newState){
-        currentState = newState;
-    }
-
-    // Unsubscribe from the event when the script is destroyed
-    void OnDestroy()
-    {
-        playerController.onStateChanged -= OnPlayerStateChanged;
+    void Update(){
+        this.pc.Update();
     }
 
     public void TakeDamage(int amount){
-        playerController.TakeDamage(amount);
+        curHealth -= amount;
+        if (curHealth <= 0){
+            DoDeath();
+        } 
+        Debug.Log("Health: " + curHealth);
     }
 
-    private void OnExitAnimation(PlayerController.PlayerState endState){
-        playerController.UpdateState(endState);
+    public void DoDeath(){
+        Debug.Log("You are dead");
+        UpdateState(PlayerState.Dead);
+    }
+
+    public PlayerController GetPlayerController(){
+        return this.pc;
+    }
+
+    private void OnExitAnimation(PlayerState endState){
+        UpdateState(endState);
+    }
+
+    public void UpdateState(PlayerState newState){
+        if (newState == currentState){
+            return;
+        }
+        currentState = newState;
+
+        // Trigger the event, if there are any subscribers
+        onStateChanged?.Invoke(currentState);
+    }
+
+    public void setAimAngle(float newAngle){
+        this.aimAngle = newAngle;
     }
 
 }

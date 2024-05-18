@@ -7,20 +7,20 @@ public class PlayerMovement
 {
     private float speed, dodgeSpeed;
     private Rigidbody2D rb;
-    private PlayerController pc;
+    private PlayerScript ps;
 
-    public PlayerMovement(float speed, float dodgeSpeed, Rigidbody2D rb, PlayerController pc){
+    public PlayerMovement(float speed, float dodgeSpeed, Rigidbody2D rb, PlayerScript ps){
         this.speed = speed;
         this.dodgeSpeed = dodgeSpeed;
         this.rb = rb;
-        this.pc = pc;
+        this.ps = ps;
     }
 
     public void DoMove(Vector2 movement){
         if (movement != Vector2.zero){
-            pc.UpdateState(PlayerController.PlayerState.Walking);
+            ps.UpdateState(PlayerScript.PlayerState.Walking);
         }else{
-            pc.UpdateState(PlayerController.PlayerState.Idle);
+            ps.UpdateState(PlayerScript.PlayerState.Idle);
         }
         rb.velocity = movement * speed;
     }

@@ -21,11 +21,11 @@ public class GunHandler : MonoBehaviour
         gun = new GunWeaponClass(weaponName, icon, description, attackPoint, attackInterval, bulletPrefab, bulletSpeed);
     }
 
-    void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.CompareTag("Player")) {
-            GameObject.FindObjectOfType<PlayerController>().weaponInventory.AddWeapon(gun);
-            Destroy(this.gameObject);
-        }
-    }
+    // void OnTriggerEnter2D(Collider2D other){
+    //     if (other.gameObject.CompareTag("Player")) {
+    //         GameObject.FindObjectOfType<PlayerController>().weaponInventory.AddWeapon(gun);
+    //         Destroy(this.gameObject);
+    //     }
+    // }
 
 }

@@ -37,7 +37,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""Primary"",
                     ""type"": ""Button"",
                     ""id"": ""52c7a557-df59-4ddf-8d71-cb6629fc03e2"",
                     ""expectedControlType"": ""Button"",
@@ -46,9 +46,45 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dodge"",
+                    ""name"": ""Secondary"",
+                    ""type"": ""Button"",
+                    ""id"": ""993a569a-e19c-494a-8654-aca9674b44e0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Special"",
+                    ""type"": ""Button"",
+                    ""id"": ""e0fdde74-2fa5-4a31-a3a1-5c9d2ea6b840"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Utility"",
                     ""type"": ""Button"",
                     ""id"": ""cd3bd881-773b-4c45-bd71-719e3d362cd5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ultimate"",
+                    ""type"": ""Button"",
+                    ""id"": ""fb6f44e9-54c9-4c05-b200-c5dae46dfa49"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""e25797af-8cc6-46a4-a30d-00a417a49360"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -59,42 +95,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""type"": ""PassThrough"",
                     ""id"": ""56fd3138-a095-4bd1-8282-bfe4f4a37f64"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SelectCraft"",
-                    ""type"": ""Button"",
-                    ""id"": ""993a569a-e19c-494a-8654-aca9674b44e0"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SelectWeapon"",
-                    ""type"": ""Value"",
-                    ""id"": ""61ab9663-53d3-4a0b-af2e-20a0e4e853b4"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Craft"",
-                    ""type"": ""Button"",
-                    ""id"": ""e0fdde74-2fa5-4a31-a3a1-5c9d2ea6b840"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""StartCraft"",
-                    ""type"": ""Button"",
-                    ""id"": ""fb6f44e9-54c9-4c05-b200-c5dae46dfa49"",
-                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -218,18 +218,51 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Fire"",
+                    ""action"": ""Primary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""37a6df61-ced8-4c83-8823-b92712a21905"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ultimate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71b8a3fa-b03f-4c38-8965-49111b828217"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Secondary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c2a40469-010f-4527-a4ac-3cc68d3faba7"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Special"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""468ceb08-6e2d-4fe7-8189-206bed84d881"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""path"": ""<Keyboard>/leftShift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dodge"",
+                    ""action"": ""Utility"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -245,68 +278,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Left or Right"",
-                    ""id"": ""4b92a84e-f585-469d-8c18-69c149851f1c"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SelectCraft"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""74e28662-fabe-41d6-9406-3d9a48adb9c9"",
-                    ""path"": ""<Keyboard>/j"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SelectCraft"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""e00f50e6-cbb0-48e6-afd4-c1b3fdf93b0a"",
-                    ""path"": ""<Keyboard>/k"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SelectCraft"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
-                    ""id"": ""c2a40469-010f-4527-a4ac-3cc68d3faba7"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Craft"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""957e5caf-f896-4566-9196-3fb2612eda68"",
-                    ""path"": ""<Mouse>/scroll/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SelectWeapon"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""37a6df61-ced8-4c83-8823-b92712a21905"",
+                    ""id"": ""b238ebae-537c-484c-b3f1-f190298759c8"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""StartCraft"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -318,13 +296,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
-        m_Player_Dodge = m_Player.FindAction("Dodge", throwIfNotFound: true);
+        m_Player_Primary = m_Player.FindAction("Primary", throwIfNotFound: true);
+        m_Player_Secondary = m_Player.FindAction("Secondary", throwIfNotFound: true);
+        m_Player_Special = m_Player.FindAction("Special", throwIfNotFound: true);
+        m_Player_Utility = m_Player.FindAction("Utility", throwIfNotFound: true);
+        m_Player_Ultimate = m_Player.FindAction("Ultimate", throwIfNotFound: true);
+        m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
-        m_Player_SelectCraft = m_Player.FindAction("SelectCraft", throwIfNotFound: true);
-        m_Player_SelectWeapon = m_Player.FindAction("SelectWeapon", throwIfNotFound: true);
-        m_Player_Craft = m_Player.FindAction("Craft", throwIfNotFound: true);
-        m_Player_StartCraft = m_Player.FindAction("StartCraft", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -387,25 +365,25 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Fire;
-    private readonly InputAction m_Player_Dodge;
+    private readonly InputAction m_Player_Primary;
+    private readonly InputAction m_Player_Secondary;
+    private readonly InputAction m_Player_Special;
+    private readonly InputAction m_Player_Utility;
+    private readonly InputAction m_Player_Ultimate;
+    private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Aim;
-    private readonly InputAction m_Player_SelectCraft;
-    private readonly InputAction m_Player_SelectWeapon;
-    private readonly InputAction m_Player_Craft;
-    private readonly InputAction m_Player_StartCraft;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
         public PlayerActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Fire => m_Wrapper.m_Player_Fire;
-        public InputAction @Dodge => m_Wrapper.m_Player_Dodge;
+        public InputAction @Primary => m_Wrapper.m_Player_Primary;
+        public InputAction @Secondary => m_Wrapper.m_Player_Secondary;
+        public InputAction @Special => m_Wrapper.m_Player_Special;
+        public InputAction @Utility => m_Wrapper.m_Player_Utility;
+        public InputAction @Ultimate => m_Wrapper.m_Player_Ultimate;
+        public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Aim => m_Wrapper.m_Player_Aim;
-        public InputAction @SelectCraft => m_Wrapper.m_Player_SelectCraft;
-        public InputAction @SelectWeapon => m_Wrapper.m_Player_SelectWeapon;
-        public InputAction @Craft => m_Wrapper.m_Player_Craft;
-        public InputAction @StartCraft => m_Wrapper.m_Player_StartCraft;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -418,27 +396,27 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
-            @Fire.started += instance.OnFire;
-            @Fire.performed += instance.OnFire;
-            @Fire.canceled += instance.OnFire;
-            @Dodge.started += instance.OnDodge;
-            @Dodge.performed += instance.OnDodge;
-            @Dodge.canceled += instance.OnDodge;
+            @Primary.started += instance.OnPrimary;
+            @Primary.performed += instance.OnPrimary;
+            @Primary.canceled += instance.OnPrimary;
+            @Secondary.started += instance.OnSecondary;
+            @Secondary.performed += instance.OnSecondary;
+            @Secondary.canceled += instance.OnSecondary;
+            @Special.started += instance.OnSpecial;
+            @Special.performed += instance.OnSpecial;
+            @Special.canceled += instance.OnSpecial;
+            @Utility.started += instance.OnUtility;
+            @Utility.performed += instance.OnUtility;
+            @Utility.canceled += instance.OnUtility;
+            @Ultimate.started += instance.OnUltimate;
+            @Ultimate.performed += instance.OnUltimate;
+            @Ultimate.canceled += instance.OnUltimate;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
             @Aim.started += instance.OnAim;
             @Aim.performed += instance.OnAim;
             @Aim.canceled += instance.OnAim;
-            @SelectCraft.started += instance.OnSelectCraft;
-            @SelectCraft.performed += instance.OnSelectCraft;
-            @SelectCraft.canceled += instance.OnSelectCraft;
-            @SelectWeapon.started += instance.OnSelectWeapon;
-            @SelectWeapon.performed += instance.OnSelectWeapon;
-            @SelectWeapon.canceled += instance.OnSelectWeapon;
-            @Craft.started += instance.OnCraft;
-            @Craft.performed += instance.OnCraft;
-            @Craft.canceled += instance.OnCraft;
-            @StartCraft.started += instance.OnStartCraft;
-            @StartCraft.performed += instance.OnStartCraft;
-            @StartCraft.canceled += instance.OnStartCraft;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -446,27 +424,27 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
-            @Fire.started -= instance.OnFire;
-            @Fire.performed -= instance.OnFire;
-            @Fire.canceled -= instance.OnFire;
-            @Dodge.started -= instance.OnDodge;
-            @Dodge.performed -= instance.OnDodge;
-            @Dodge.canceled -= instance.OnDodge;
+            @Primary.started -= instance.OnPrimary;
+            @Primary.performed -= instance.OnPrimary;
+            @Primary.canceled -= instance.OnPrimary;
+            @Secondary.started -= instance.OnSecondary;
+            @Secondary.performed -= instance.OnSecondary;
+            @Secondary.canceled -= instance.OnSecondary;
+            @Special.started -= instance.OnSpecial;
+            @Special.performed -= instance.OnSpecial;
+            @Special.canceled -= instance.OnSpecial;
+            @Utility.started -= instance.OnUtility;
+            @Utility.performed -= instance.OnUtility;
+            @Utility.canceled -= instance.OnUtility;
+            @Ultimate.started -= instance.OnUltimate;
+            @Ultimate.performed -= instance.OnUltimate;
+            @Ultimate.canceled -= instance.OnUltimate;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
             @Aim.started -= instance.OnAim;
             @Aim.performed -= instance.OnAim;
             @Aim.canceled -= instance.OnAim;
-            @SelectCraft.started -= instance.OnSelectCraft;
-            @SelectCraft.performed -= instance.OnSelectCraft;
-            @SelectCraft.canceled -= instance.OnSelectCraft;
-            @SelectWeapon.started -= instance.OnSelectWeapon;
-            @SelectWeapon.performed -= instance.OnSelectWeapon;
-            @SelectWeapon.canceled -= instance.OnSelectWeapon;
-            @Craft.started -= instance.OnCraft;
-            @Craft.performed -= instance.OnCraft;
-            @Craft.canceled -= instance.OnCraft;
-            @StartCraft.started -= instance.OnStartCraft;
-            @StartCraft.performed -= instance.OnStartCraft;
-            @StartCraft.canceled -= instance.OnStartCraft;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -487,12 +465,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnFire(InputAction.CallbackContext context);
-        void OnDodge(InputAction.CallbackContext context);
+        void OnPrimary(InputAction.CallbackContext context);
+        void OnSecondary(InputAction.CallbackContext context);
+        void OnSpecial(InputAction.CallbackContext context);
+        void OnUtility(InputAction.CallbackContext context);
+        void OnUltimate(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
-        void OnSelectCraft(InputAction.CallbackContext context);
-        void OnSelectWeapon(InputAction.CallbackContext context);
-        void OnCraft(InputAction.CallbackContext context);
-        void OnStartCraft(InputAction.CallbackContext context);
     }
 }

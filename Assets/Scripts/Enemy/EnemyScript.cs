@@ -71,7 +71,7 @@ public class EnemyScript : MonoBehaviour
     }
 
     private void DoAttack(){
-        if(canAttack && playerScript.currentState != PlayerController.PlayerState.Dead){
+        if(canAttack && playerScript.currentState != PlayerScript.PlayerState.Dead){
             GameObject bullet = Instantiate(bulletPrefab, this.transform.position, Quaternion.identity);
             bullet.transform.right = direction;
             bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * enemySO.bulletSpeed;
@@ -80,7 +80,7 @@ public class EnemyScript : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.CompareTag("Player") && playerScript.currentState != PlayerController.PlayerState.Dodging)
+        if (collision.gameObject.CompareTag("Player") && playerScript.currentState != PlayerScript.PlayerState.Dodging)
         {
             Debug.Log("Collision enter: " + collision.gameObject.name);
             playerScript.TakeDamage(1);

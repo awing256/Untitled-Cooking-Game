@@ -3,130 +3,88 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController
 {
-    private InputAction move, dodge, fire, aim;
-    [SerializeField] PlayerScriptableObject playerSO; 
-    private int curHealth;
-    private bool isFiring = false;
-    [SerializeField] private GameObject player;
-    [SerializeField] private GameObject attackPoint;
-    [SerializeField] private GameObject reticle; 
-    public WeaponInventoryScript weaponInventory;    
-    public enum PlayerState
-    {
-        Idle,
-        Walking,
-        Dodging,
-        Dead
-    }
-    public PlayerState currentState;
-    public delegate void OnStateChanged(PlayerState newState);
-    public event OnStateChanged onStateChanged;
+    private PlayerScript ps;
     private PlayerMovement playerMovement;
     private PlayerAim playerAim;
     private PlayerAnimation playerAnimation;
-    public float aimAngle;
+    private GameObject player;
+    
+    private InputAction primary, secondary, special, utility, ultimate, interact, move, aim;
 
-    public void Initialize(InputAction move, InputAction dodge, InputAction fire, InputAction aim) {
+    
+
+    public PlayerController(float playerSpeed, float dodgeSpeed, float aimDistance, PlayerScript ps, GameObject attackPoint, 
+        GameObject reticle) {
+        this.ps = ps;
+        this.player = ps.gameObject;
+        playerMovement = new PlayerMovement(playerSpeed, dodgeSpeed, player.GetComponent<Rigidbody2D>(), ps);
+        playerAim = new PlayerAim(aimDistance, player.GetComponent<Transform>(), attackPoint.GetComponent<Transform>(), 
+            reticle.GetComponent<Transform>(), ps);
+        playerAnimation = new PlayerAnimation(player.GetComponent<Animator>(), player.GetComponent<SpriteRenderer>(), 
+            attackPoint.GetComponent<SpriteRenderer>(), ps);
+
+        ps.onStateChanged += OnStateChanged;
+    }
+
+    public void SetInputs(InputAction primary, InputAction secondary, InputAction special, InputAction utility, 
+    InputAction ultimate, InputAction interact, InputAction move, InputAction aim){
+        Debug.Log("entering pc for input set");
         this.move = move;
         this.move.Enable();
-        this.dodge = dodge;
-        this.dodge.Enable();
-        this.fire = fire;
-        this.fire.Enable();
-        this.aim = aim;
-        this.aim.Enable();
+        this.primary = primary;
+        this.primary.Enable();
+        this.secondary = secondary;
+        this.secondary.Enable();
+        this.special = special;
+        this.special.Enable();
+        this.utility = utility;
+        this.utility.Enable();
+        this.ultimate = ultimate;
+        this.ultimate.Enable();
+        this.interact = interact;
+        this.interact.Enable();
+        this.move = move;
+        this.move.Enable();
 
-        curHealth = playerSO.maxHealth;
-        currentState = PlayerState.Idle;
+        playerAim.SetInput(aim);
 
-        playerMovement = new PlayerMovement(playerSO.speed, playerSO.dodgeSpeed, player.GetComponent<Rigidbody2D>(), this);
-        playerAim = new PlayerAim(playerSO.aimDistance, player.GetComponent<Transform>(), attackPoint.GetComponent<Transform>(), 
-            reticle.GetComponent<Transform>(), this);
-        playerAnimation = new PlayerAnimation(player.GetComponent<Animator>(), player.GetComponent<SpriteRenderer>(), 
-            attackPoint.GetComponent<SpriteRenderer>(), this );
-        
         SubscribeToInputEvents();
-        weaponInventory.onWeaponChanged += playerAnimation.OnWeaponChanged;
-
     }
 
     private void SubscribeToInputEvents(){
-        fire.started += _ => {
-            isFiring = true;
+        this.utility.performed += _ => {
+            ps.UpdateState(PlayerScript.PlayerState.Dodging);
         };
-        fire.canceled += _ =>{
-            isFiring = false;
-        };
-
-        dodge.performed += _ => {
-            UpdateState(PlayerState.Dodging);
-        };
+    }
+    private void OnStateChanged(PlayerScript.PlayerState newState){
+        
     }
 
 
-    private void Update(){
+    public void Update(){
 
-        aimAngle = playerAim.DoAim(aim.ReadValue<Vector2>());
+        ps.setAimAngle(playerAim.DoAim());
 
-        switch (currentState)
+        switch (ps.currentState)
         {
-            case PlayerState.Idle:
+            case PlayerScript.PlayerState.Idle:
                 PlayerActionable();
                 break;
-            case PlayerState.Walking:
+            case PlayerScript.PlayerState.Walking:
                 PlayerActionable();
                 break;
-            case PlayerState.Dodging:
+            case PlayerScript.PlayerState.Dodging:
                 playerMovement.DoDodge();
-                isFiring = false;
                 break;
-            case PlayerState.Dead:
+            case PlayerScript.PlayerState.Dead:
                 break;
         }
     }
 
     private void PlayerActionable(){
         playerMovement.DoMove(move.ReadValue<Vector2>());
-        playerAnimation.CheckFlip(aimAngle);
-        
-        if(isFiring){
-            DoAttack();
-        }
+        playerAnimation.CheckFlip(ps.aimAngle);
     }
-
-
-    public void UpdateState(PlayerState newState){
-        if (newState == currentState){
-            return;
-        }
-        currentState = newState;
-
-        // Trigger the event, if there are any subscribers
-        onStateChanged?.Invoke(currentState);
-    }
-
-    private void DoAttack(){
-        if (currentState != PlayerState.Dodging){
-            weaponInventory.UseWeapon();
-        }
-    }
-
-    public void TakeDamage(int amount){
-        curHealth -= amount;
-        if (curHealth <= 0){
-            DoDeath();
-        } 
-        Debug.Log("Health: " + curHealth);
-    }
-
-    public void DoDeath(){
-        Debug.Log("You are dead");
-        UpdateState(PlayerState.Dead);
-    }
-    
-
-
-
 }

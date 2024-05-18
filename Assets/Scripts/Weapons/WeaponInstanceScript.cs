@@ -6,7 +6,6 @@ public class WeaponInstanceScript : MonoBehaviour
 {
 
     private MeleeWeaponClass weaponClass;
-    private PlayerController playerController;
     private Quaternion startRotation ;
     private Quaternion targetRotation;
     private float elapsedTime = 0f;
@@ -14,9 +13,8 @@ public class WeaponInstanceScript : MonoBehaviour
 
     public void Initialize(MeleeWeaponClass weaponClass){
         this.weaponClass = weaponClass;
-        playerController = GameObject.FindObjectOfType<PlayerController>();
-        startRotation = Quaternion.Euler(0,0,playerController.aimAngle + weaponClass.swingAmount);
-        targetRotation = Quaternion.Euler(0,0,playerController.aimAngle - weaponClass.swingAmount);
+        // startRotation = Quaternion.Euler(0,0,playerController.aimAngle + weaponClass.swingAmount);
+        // targetRotation = Quaternion.Euler(0,0,playerController.aimAngle - weaponClass.swingAmount);
     }
 
     void Update(){

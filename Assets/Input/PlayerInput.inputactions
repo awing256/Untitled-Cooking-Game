@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Fire",
+                    "name": "Primary",
                     "type": "Button",
                     "id": "52c7a557-df59-4ddf-8d71-cb6629fc03e2",
                     "expectedControlType": "Button",
@@ -24,9 +24,45 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dodge",
+                    "name": "Secondary",
+                    "type": "Button",
+                    "id": "993a569a-e19c-494a-8654-aca9674b44e0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Special",
+                    "type": "Button",
+                    "id": "e0fdde74-2fa5-4a31-a3a1-5c9d2ea6b840",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Utility",
                     "type": "Button",
                     "id": "cd3bd881-773b-4c45-bd71-719e3d362cd5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ultimate",
+                    "type": "Button",
+                    "id": "fb6f44e9-54c9-4c05-b200-c5dae46dfa49",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "e25797af-8cc6-46a4-a30d-00a417a49360",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -37,42 +73,6 @@
                     "type": "PassThrough",
                     "id": "56fd3138-a095-4bd1-8282-bfe4f4a37f64",
                     "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SelectCraft",
-                    "type": "Button",
-                    "id": "993a569a-e19c-494a-8654-aca9674b44e0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SelectWeapon",
-                    "type": "Value",
-                    "id": "61ab9663-53d3-4a0b-af2e-20a0e4e853b4",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Craft",
-                    "type": "Button",
-                    "id": "e0fdde74-2fa5-4a31-a3a1-5c9d2ea6b840",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "StartCraft",
-                    "type": "Button",
-                    "id": "fb6f44e9-54c9-4c05-b200-c5dae46dfa49",
-                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -196,18 +196,51 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Fire",
+                    "action": "Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "37a6df61-ced8-4c83-8823-b92712a21905",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ultimate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71b8a3fa-b03f-4c38-8965-49111b828217",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2a40469-010f-4527-a4ac-3cc68d3faba7",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Special",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "468ceb08-6e2d-4fe7-8189-206bed84d881",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dodge",
+                    "action": "Utility",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -223,68 +256,13 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Left or Right",
-                    "id": "4b92a84e-f585-469d-8c18-69c149851f1c",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SelectCraft",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "74e28662-fabe-41d6-9406-3d9a48adb9c9",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SelectCraft",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "e00f50e6-cbb0-48e6-afd4-c1b3fdf93b0a",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SelectCraft",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
-                    "id": "c2a40469-010f-4527-a4ac-3cc68d3faba7",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Craft",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "957e5caf-f896-4566-9196-3fb2612eda68",
-                    "path": "<Mouse>/scroll/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SelectWeapon",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "37a6df61-ced8-4c83-8823-b92712a21905",
+                    "id": "b238ebae-537c-484c-b3f1-f190298759c8",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "StartCraft",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
